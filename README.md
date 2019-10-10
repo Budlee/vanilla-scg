@@ -5,7 +5,7 @@ Used for Docker Test Container Demo
 To run the image
 
 ```dockerfile
-docker run -v `pwd`/sample_properties:/etc/gateway/config -p 80:8080 566520b39ad7
+docker run -v `pwd`/sample_properties:/etc/gateway/config -p 80:8080 jpgough/vanilla-scg
 ```
 
 Arguments
