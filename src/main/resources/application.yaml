@@ -1,0 +1,12 @@
+# Sample config
+#spring:
+#  cloud:
+#    gateway:
+#      default-filters:
+#      routes:
+#        - id: test
+#          uri: http://numbersapi.com
+#          predicates:
+#            - Path=/num/**
+#          filters:
+#            - RewritePath=/num/(?<segment>.*), /$\{segment}/trivia
