@@ -1,15 +1,14 @@
-
 spring:
   cloud:
     gateway:
       default-filters:
       routes:
         - id: test
-          uri: http://numbersapi.com
+          uri: http://192.168.1.5:8080/
           predicates:
-            - Path=/num/**
+            - Path=/a/**
           filters:
-            - RewritePath=/num/(?<segment>.*), /$\{segment}/trivia
+            - RewritePath=/a/(?<segment>.*), /$\{segment}/
 logging:
   level:
     org.springframework.cloud.gateway: TRACE
